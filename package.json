@@ -9,7 +9,9 @@
   "scripts": {
     "build": "node build.js",
     "deploy:docs": "npm run build && gh-pages -d dist",
-    "release": "npm run build && npm publish"
+    "release": "npm run build && npm publish",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,7 @@
     "postcss-copy": "^7.1.0",
     "postcss-css-variables": "^0.14.0",
     "postcss-inline": "^1.2.0",
-    "postcss-inline-svg": "^4.1.0"
+    "postcss-inline-svg": "^4.1.0",
+    "wrangler": "^4.110.0"
   }
 }
